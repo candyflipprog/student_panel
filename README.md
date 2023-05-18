@@ -1,1 +1,1 @@
-# student_panel
+# CONTROL STUDENTS PANEL
