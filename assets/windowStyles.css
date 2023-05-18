@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#input_surname, #input_name, #input_lastname, #input_birthdate, #start_year_study, #input_faculty {
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    width: 240px;
+    height: 27px;
+    border-radius: 4px;
+    border: 3px solid #E8D9A9;
+}
+
+#btn_add {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#main_form {
+    border-radius: 10px;
+    display: flex;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    background-color: #9A5044;
+    width: 450px;
+    height: 500px;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border: 4px solid #E8D9A9;
+}
+
+/* КНопка */
+
+#write_btn {
+    display: flex;
+    margin-top: 380px;
+    margin-left: -168px;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #02a11f;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+#write_btn:hover {
+    background-color: #09e331;
+    transition: 0.7s;
+}
+
+/* Кнопка закрыть форму */
+
+#close_form_btn {
+    display: flex;
+    margin-top: 20px;
+    margin-left: -189px;
+    background-color: #f02432;
+    border: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#close_form_btn:hover {
+    background-color: red;
+    transform: 0.7s;
+}
+
+
+
+/* Убрать стрелки */
+#start_year_study {
+    -moz-appearance: textfield;
+}

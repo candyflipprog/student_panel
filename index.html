@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Control panel students</title>
+    <script type="module" src="./script.js" defer type="module"></script>
+    <script src="./modules/createStudents.js" defer type="module"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/windowStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="title">Панель управления студентами</h1>
+
+    <button class="open_form_btn" id="open_form_btn">Создать студента</button>
+
+    <div class="container" id="container">
+
+
+        <table id="main_table">
+            <thead>
+                <tr id="title_tr">
+                    <th id="surname_sort">Фамилия</th>
+                    <th id="name_sort">Имя</th>
+                    <th id="lastname_sort">Отчество</th>
+                    <th id="birthdate_sort">Дата рождения</th>
+                    <th id="course_sort">Год начала обучения</th>
+                    <th id="faculty_sort">Факультет</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="main_form">
+        <form action="new_students" id="add_student_form">
+            <label for="surname" style="text-align: center; margin-top: 15px; font-size: 24px; color: #E8D9A9;">Фамилия</label>
+            <br>
+            <input type="text" id="input_surname" placeholder="Введите фамилию" required>
+            <br>
+            <label for="name" style="font-size: 24px; color: #E8D9A9;">Имя</label>
+            <br>
+            <input type="text" id="input_name" placeholder="Введите имя" required>
+            <br>
+            <label for="lastname" style="font-size: 24px; color: #E8D9A9;">Отчество</label>
+            <br>
+            <input type="text" id="input_lastname" placeholder="Введите отчество" required>
+            <br>
+            <label for="birthday" style="font-size: 24px; color: #E8D9A9;">Дата рождения</label>
+            <br>
+            <input type="date" id="input_birthdate" required>
+            <br>
+            <label for="start_study" style="font-size: 24px; color: #E8D9A9;">Дата начала обучения</label>
+            <br>
+            <input type="number" id="start_year_study" placeholder="Введите год начала обучения" required>
+            <br>
+            <label for="faculty" style="font-size: 24px; color: #E8D9A9;">Факультет</label>
+            <br>
+            <input type="text" id="input_faculty" placeholder="Введите факультет" required>
+            <br>
+        </form>
+
+        <div>
+            <button id="write_btn">Записать</button>
+            <button id="close_form_btn">Закрыть форму</button>
+        </div>
+    </div>
+</body>
+
+</html>
