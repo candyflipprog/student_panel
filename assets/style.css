@@ -45,6 +45,16 @@ td {
     color: #E8D9A9;
 }
 
+.filter_title {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: -50px;
+    user-select: none;
+    font-size: 48px;
+    color: #E8D9A9;
+}
+
 .open_form_btn {
     display: block;
     margin-left: auto;
@@ -66,4 +76,19 @@ td {
     border: 5px solid #9A5044;
     color: #9A5044;
     transition: 0.8s;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#surname_filter, #name_filter, #lastname_filter, #birthdate_filter, #course_filter, #faculty_filter {
+    margin-bottom: -50px;
+    padding: 2px;
+    width: 11%;
+    text-align: center;
+    border: none;
+    border: 3px solid #E8D9A9;
 }

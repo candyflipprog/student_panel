@@ -13,8 +13,8 @@ export function renderingStudents() {
         course -= parseInt(students[i].yearsOfStudy);
         
         if(parseInt(students[i].birthdate) < startBirthdate.getFullYear()) {
-            alert("Ошибка");
-            location.reload();
+            alert("Проверьте наличие ошибок");
+            return;
         } else {
             renderTD.birthdayTd.innerHTML = `${students[i].birthdate} (${age} лет)`;
         }
