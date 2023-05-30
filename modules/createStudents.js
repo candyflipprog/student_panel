@@ -17,7 +17,7 @@ openFormBTN.addEventListener("click", () => {
 closeFormBTN.addEventListener("click", () => {
     studentsFORM.style.display = "none";
     openFormBTN.style.display = "block";
-    container.style.display = "flex";
+    container.style.display = "block";
 })
 
 writeBTN.addEventListener("click", () => {
@@ -38,24 +38,11 @@ writeBTN.addEventListener("click", () => {
             faculty: facultyValue
         }
     
-
-    if(birthdateValue < new Date(1900, 0, 1) || yearsOfStudyValue < new Date(2000, 0, 1).getFullYear()) {
+    if(birthdateValue < new Date(1900, 0, 1)|| parseInt(birthdateValue) > new Date().getFullYear() || yearsOfStudyValue < new Date(2000, 0, 1).getFullYear() || yearsOfStudyValue > new Date().getFullYear()) {
         alert("Проверьте дату и год начала обучения!");
         return;
-    } else if(parseInt(birthdateValue) > new Date().getFullYear()) {
-        alert("Проверьте наличие ошибок в дате");
-        return;
-    } else if(yearsOfStudyValue > new Date().getFullYear()) {
-        alert("Проверьте наличие ошибок в годе начала обучения");
-        return;
-    } else if(surnameValue == "" || nameValue == "" || lastnameValue == "" || facultyValue == "") {
-        alert("Проверьте Ф.И.О или факультет на наличие ошибок");
-        return;
-    } else if(birthdateValue == "") {
-        alert("Неверная дата рождения");
-        return;
-    } else if(yearsOfStudyValue == "") {
-        alert("Вводить можно только цифры")
+    } else if(surnameValue == "" || nameValue == "" || lastnameValue == "" || facultyValue == "" || birthdateValue == "" || yearsOfStudyValue == "") {
+        alert("Проверьте наличие ошибок!");
         return;
     } else students.push(studentsObject);
 
